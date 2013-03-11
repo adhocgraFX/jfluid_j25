@@ -1,0 +1,249 @@
+/*	rtl css overrides	*/
+* {
+	text-align: right;
+}
+/* Content	--------------------------- */	
+/* slideshow */
+/* lists */
+/* breadcrumbs */
+/* logo */
+/* nav */
+/* nav-bottom */
+/* search */
+/* text resizer */
+/* forms */
+/* beez tabs */
+/* pagebreak tabs */
+/* beez hide */
+/* pagenav */
+/* readmore */
+/* actions */
+/* pagination */
+/* blog / featured */
+/* ------------------------------------ */
+
+/* slideshow */
+/* lists */
+/* breadcrumbs */ /* copy-pad, buttons-pad */
+ul.breadcrumbs, .breadcrumbs li, .breadcrumbs li a {
+	float: right;
+}
+#breadcrumbs-pad {
+	float: right;
+}
+.breadcrumbs li span:before  {
+	content: "\f053";
+}
+#copy-pad, #buttons-pad {
+    text-align: left;
+}
+/* logo */
+#logo img{
+	float: right
+}
+/* nav */
+#nav ul {
+	float: right;
+	text-align: right;
+}
+#nav ul li {
+	float: right;
+}
+#nav li a {
+	float: right;
+}
+#nav ul li:hover ul {
+	left: inherit;
+	right: -2px
+}
+#nav ul li:hover ul li a {
+	text-align: right;
+}
+#nav ul li:hover ul li a:hover, #nav ul li:hover ul li.active a:hover  {
+	text-align: right;
+}
+#nav ul li:hover ul li.active a, #nav ul li ul li.active a {
+	text-align: right;
+}
+/*	3. ebene	*/
+#nav ul li ul li:hover ul {
+	top: -1px;
+	left: inherit;
+	right: 12em;
+}
+#nav ul li:hover ul li ul li a {
+	text-align: right;
+}
+#nav ul li:hover ul li ul li.active a, #nav ul li ul li ul li.active a {
+	text-align: right;
+}
+/* off canvas wieder richten */
+#wrapper #navmenu ul li a {
+	text-align: left;
+}
+/* nav-bottom */
+#nav-bottom ul {
+	float: right;
+}
+#nav-bottom li {
+	padding-right: 0;
+	padding-left: .25em;
+}
+#nav-bottom ul li {
+	float: right;
+}
+#nav-bottom ul li:hover ul li a:hover, #nav-bottom ul li:hover ul li.active a:hover {
+	text-align: right;
+}
+#nav-bottom ul li:hover ul li.active a, #nav-bottom ul li ul li.active a {
+	text-align: right;
+}
+/* search */
+input.inputbox_search {
+	float: left;
+	-moz-border-radius:  0 6px 6px 0 ;
+	-webkit-border-radius: 0 6px 6px 0;
+	border-radius: 0 6px 6px 0;
+}
+input.button_search[type="submit"] {
+	float: left;
+	margin: 0 -1px 10px 0;
+	-moz-border-radius: 6px 0 0 6px;
+	-webkit-border-radius: 6px 0 0 6px;
+	border-radius: 6px 0 0 6px;
+}
+input.button_search[type="image"] {
+	float: left;
+	margin: 0 -1px 10px 0;
+	-moz-border-radius: 6px 0 0 6px;
+	-webkit-border-radius: 6px 0 0 6px;
+	border-radius: 6px 0 0 6px;
+}
+/* text resizer */
+#textsizer-embed {
+	float: left;
+}
+ul.textresizer {
+	float: right;
+}
+ul.textresizer li {
+	float: right;
+}
+ul.textresizer a {
+	float: right;
+}
+/* forms */
+.module_content .inputbox, .module_content textarea, .module_content select {
+	float: right;
+}
+/* beez tabs */
+ul.tabs li {
+	float: right;
+	margin: 0 0 0 3px;
+}
+.tabcontent {
+	-moz-border-radius: 3px 0px 3px 3px;
+	-webkit-border-radius: 3px 0px 3px 3px;
+	border-radius: 3px 0px 3px 3px;
+}
+a.unseen:after{
+	padding-left: 0 !important;
+	content: "";
+}
+a.unseen:before{
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	text-decoration: inherit;
+	padding-right: 1em;
+	color: #3c5a82;
+	content: "\f053";
+}
+/* pagebreak tabs */
+dl.tabs {
+	float: right;
+}
+dl.tabs dt {
+	float: right;
+	margin: 0 0 0 3px;
+}
+div.current {
+	-webkit-border-radius: 3px 0 3px 3px;
+	-moz-border-radius: 3px 0 3px 3px;
+	border-radius: 3px 0 3px 3px;
+}
+/* beez hide */
+.no {
+	float: left;
+}
+/* pagenav */
+ul.pagenav {
+	float:right;
+}
+ul.pagenav li.pagenav-next {
+	float: left;
+}
+ul.pagenav li.pagenav-prev {
+	float: right;
+}
+ul.pagenav li.pagenav-next a:before {
+	font-family: FontAwesome;
+  	font-weight: normal;
+  	font-style: normal;
+	display: inline-block;
+  	text-decoration: inherit;
+  	padding-right: 1em;
+	color: #3c5a82;
+	content: "\f053";
+}
+ul.pagenav li.pagenav-prev a:after {
+	font-family: FontAwesome;
+  	font-weight: normal;
+  	font-style: normal;
+	display: inline-block;
+  	text-decoration: inherit;
+  	padding-left: 1em;
+	color: #3c5a82;
+	content: "\f054";
+}
+ul.pagenav li.pagenav-next a:after {
+	padding-left: 0 !important;
+	content: "";
+}
+ul.pagenav li.pagenav-prev a:before {
+	padding-right: 0 !important;
+	content: "";
+}
+/* readmore */
+.readmore a:before {
+	font-family: FontAwesome;
+  	font-weight: normal;
+  	font-style: normal;
+	display: inline-block;
+  	text-decoration: inherit;
+  	padding-right: 1em;
+	color: #3c5a82;
+	content: "\f053";
+}
+.readmore a:after {
+	padding-left: 0 !important;
+	content: "";
+}
+/* actions */
+ul.actions {
+	float: left;
+}
+ul.actions {
+	text-align: left;
+}
+/* pagination nothing to do */
+
+/* Blog/featured columns */
+.blog-featured .item, .blog .item {
+	float:right;
+}
+.items-row .column-1 {
+	margin-right: 0;
+	margin-left: 4%;
+}
