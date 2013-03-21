@@ -174,7 +174,7 @@ html#range_1 #wrapper #main-pad, html#range_1 #wrapper #toolbarnav {
 	display:block;
 }
 #slideshow-pad {
-	padding-bottom: 0; /*	kein padding mehr nötig	*/
+	padding: 0 20px; /*	kein padding mehr nötig	*/
 	background: transparent;
 	margin: 0;
 }
