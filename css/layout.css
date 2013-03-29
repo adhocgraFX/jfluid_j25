@@ -108,16 +108,6 @@ html#range_1 #wrapper #main-pad, html#range_1 #wrapper #toolbarnav {
 #main-pad.container {
 	padding: 3em 0 0 0;
 }
-#main p, #main ul li {
-	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	-ms-hyphens: auto;
-	hyphens: auto;
-	word-wrap: break-word;
-}
-:lang(de) #main p + p, :lang(en) #main p + p {
-	text-indent: 1.5em;
-}
 #left, #right {
 	margin-top: 10px;
 }

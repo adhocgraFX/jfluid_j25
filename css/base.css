@@ -1,10 +1,10 @@
 /*
-* JoomSkeleton V1.0e
+* JoomFluid 2.5
 * Copyright 2012, Johannes Hock
 * www.adhocgrafx.de
 * Free to use under the MIT license.
 * http://www.opensource.org/licenses/mit-license.php
-* 3/3/2012
+* 2011 
 */
 
 /* Table of Content
@@ -175,10 +175,20 @@ p {
 }
 /* special paragraphs */
 p.bookstyle {
-	text-indent: 2em;
+	text-indent: 3em !important;
 }
 p.bookstyle > * {
 	text-indent: 0;
+}
+article p, article ul li {
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	word-wrap: break-word;
+}
+article p + p {
+	text-indent: 1.6em;
 }
 p img {
 	margin: 0;
@@ -187,7 +197,7 @@ p.lead {
 	font-size: 112.5%; /* 18px */
 	color: #777;
 }
-p.newspaper2 {
+p.newspaper-2 {
 	-moz-column-count: 2;
 	-moz-column-gap: 2em;
 	-webkit-column-count: 2;
@@ -199,7 +209,7 @@ p.newspaper2 {
 	-webkit-column-rule-style: dotted;
 	-webkit-column-rule-width:  1px;
 }
-p.newspaper3 {
+p.newspaper-3 {
 	-moz-column-count: 3;
 	-moz-column-gap: 2em;
 	-webkit-column-count: 3;
@@ -211,19 +221,25 @@ p.newspaper3 {
 	-webkit-column-rule-style: dotted;
 	-webkit-column-rule-width:  1px;
 }
-p.dropcap2:first-letter {
+p.drop-cap-2:first-letter {
 	float: left;
 	color: #777;
 	font-size: 3em;
 	line-height: .9;
 	padding: 0 .1em 0 0 !important;
 }
-p.dropcap3:first-letter {
+p.drop-cap-3:first-letter {
 	float: left;
 	color: #777;
 	font-size: 5em;
 	line-height: .8;
 	padding: 0 .1em 0 0 !important;
+}
+p.drop-cap-2, p.drop-cap-3, p.noindent {
+	text-indent: 0 !important;
+}
+p.drop-cap-2, p.drop-cap-3 {
+	text-indent: 0 !important;
 }
 p.highlight {
 	color: #5a1e1e;
@@ -232,6 +248,7 @@ p.dimmed {
 	color: #999;
 }
 p.box, .box {
+	text-indent: 0 !important;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
@@ -382,13 +399,13 @@ ul {
 ol {
 	list-style: decimal;
 }
-ol, ul.square, ul.circle, ul.disc {
+ol, article ul, ul.square, ul.circle, ul.disc {
 	margin-left: 2em;
 }
 ul.square {
 	list-style: square outside;
 }
-ul.circle {
+ul.circle, article ul {
 	list-style: circle outside;
 }
 ul.disc {
@@ -425,7 +442,10 @@ article dl dd {
 	margin-left: 2em !important;
 	text-indent: -2em;
 }
-/*	some font-awesome icons	*/
+/*	some font-awesome icons	- ziemlich viel arbeit */
+ul.leaf, ul.heart-empty , ul.star-empty, ul.bookmark-empty {
+	list-style: none outside;
+}
 ul.leaf li:before, ul.heart-empty li:before, ul.star-empty li:before, ul.bookmark-empty li:before, article dl dd:before {
 	font-family: FontAwesome;
 	font-weight: normal;
