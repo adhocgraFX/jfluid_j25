@@ -404,7 +404,11 @@ function myCallback(i) {
 		<!-- delete me - if you don't like me :(	-->
 		<div class="width-100" id="copy-pad"> <a href="http://www.adhocgrafx.de" target="_blank">adhocgraFX &copy; Johannes Hock 2011 all rights reserved</a> </div>
 		<!--	:(	-->
-		<div class="width-100" id="gototop-pad"><ul class="mynav"><li><a href="#top-of-page">Top</a></li></ul></div>
+		<div class="width-100" id="gototop-pad">
+			<ul class="mynav">
+				<li><a href="#top-of-page">Top</a></li>
+			</ul>
+		</div>
 	</div>
 	<!--	 main pad	--> 
 </div>
@@ -413,7 +417,7 @@ function myCallback(i) {
 <jdoc:include type="modules" name="debug" />
 
 <!-- smooth scroll -->
-<script>
+<script type="text/javascript">
 	$(document).ready(function() {
 		$('ul.mynav a').smoothScroll({
 			speed: 600
