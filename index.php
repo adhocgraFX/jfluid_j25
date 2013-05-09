@@ -28,6 +28,7 @@ $typesize = $this->params->get('typesize');
 $gridsort = $this->params->get('gridsort');
 $slidethumb = $this->params->get('slidethumb');
 $rtl = $this->params->get('rtl');
+$anonym = $this->params->get('anonym');
 ?>
 
 <!doctype html>
@@ -493,7 +494,11 @@ $(window).load(function(){
 <!-- google analytics id -->
 <?php if ($analytics != "UA-XXXXX-X"): ?>
 <script>
-	var _gaq=[['_setAccount','<?php echo htmlspecialchars($analytics); ?>'],['_trackPageview']]; 
+	var _gaq=[['_setAccount','<?php echo htmlspecialchars($analytics); ?>'],
+	['_trackPageview']]; 
+	<?php if ($anonym == 1):?>
+		_gaq.push (['_gat._anonymizeIp']);
+	<?php endif; ?>
 	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 <?php endif; ?>
