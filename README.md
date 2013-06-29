@@ -1,7 +1,35 @@
 JoomFluid2.5
+responsive Joomla! 2.5 template
 ============
+JoomFluid 2.5 template file v2.0 | 29.06. 2013
 
-responsive joomla template
+change-log: 
+Server-side conditional js loading with Mobile_Detect
+Server-side conditional module loading with Mobile_Detect
+IP-masking option for Google Analytics; http requests reduced
+New rtl option
+New responsive tables option
+New optional text resizer
+New ResponsiveSlides.js v1.52 by Viljami Salvinen
+New off-canvas mobile navigation and Adobe edge font integration
+Font-Awesome integration and
+Left / Main / Right sort option
+2 new Headline scale options added
+some css improvements, gutter width option added
+some loading improvements
+new left_slider and right_slider positions
+changes in breadcrumbs html override and hide-module chrome
+some css and module chrome refinements
+new head1-3 and bottom1-3 module rows with flexible module width suffixes and
+equal module heights in these rows
+some css refinements and slideshow framework
+some ie fixes and little changes
+some ie fixes - never ending story
+responsive module shuffling for mobile sizes
+JoomFluid is the liquid little sister of JoomSkeleton.
+This template is experimental an only for testing purposes, not for production sites.
+
+
 
 Ideas and Inspirations
 The Joomla! template files for JoomSkeleton are made by Johannes Hock. The base.css layout is inspired by Dirk Jesse, Nathan Smith and David Gamache. Most Joomla! layout styles and the WAI ARIA integration are inspired by Angie Radtke and her famous beez template. I found many helpfull and valuable informations about template creation in the books "Joomla! Templates entwickeln" by Angie Radtke and "Templates für Joomla! 1.6" by Alexander Schmidt, Andreas Lehr. The adapt.js and grid css system is written by Nathan Smith. Philip Locke and Roberto Segura told me cooperatively the responsive module shuffling trick.

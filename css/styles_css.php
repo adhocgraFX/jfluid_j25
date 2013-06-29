@@ -22,6 +22,7 @@
 	$headfont = $this->params->get('headfont');
 	$bodyfont = $this->params->get('bodyfont');
 ?>
+
 <?php if ($headfont != "default"): ?>
 	<script src="http://use.edgefonts.net/<?php echo htmlspecialchars($headfont); ?>.js"></script>
 <?php endif;?>
