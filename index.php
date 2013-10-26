@@ -28,9 +28,13 @@ $doc->addScript($tpath.'/js/modernizr-2.6.2.custom.new.js'); // <- Modernisierun
 
 // unset scripts, put them into /js/template.js.php to minify http requests
 unset($doc->_scripts[$this->baseurl.'/media/system/js/mootools-core.js']);
+unset($doc->_scripts[$this->baseurl.'/media/system/js/mootools-core-uncompressed.js']);
 unset($doc->_scripts[$this->baseurl.'/media/system/js/mootools-more.js']);
+unset($doc->_scripts[$this->baseurl.'/media/system/js/mootools-more-uncompressed.js']);
 unset($doc->_scripts[$this->baseurl.'/media/system/js/core.js']);
+unset($doc->_scripts[$this->baseurl.'/media/system/js/core-uncompressed.js']);
 unset($doc->_scripts[$this->baseurl.'/media/system/js/caption.js']);
+unset($doc->_scripts[$this->baseurl.'/media/system/js/caption-uncompressed.js']);
 
 // get my params
 $logo = $this->params->get('logo');
@@ -394,6 +398,8 @@ function myCallback(i) {
 <!--	 wrapper	--> 
 <!-- debug -->
 <jdoc:include type="modules" name="debug" />
+
+<!-- my scripts -->
 <script type="text/javascript">
 <!-- smooth scroll -->
 	$(document).ready(function() {
